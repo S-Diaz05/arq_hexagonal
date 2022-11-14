@@ -1,0 +1,8 @@
+dependencies {
+// https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver
+    implementation group: 'org.mongodb', name: 'mongo-java-driver', version: '3.12.11'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation project(':domain')
+}
